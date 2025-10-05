@@ -21,7 +21,7 @@ import bottle, json, modules, os, socketserver, threading, urllib.error, urllib.
 
 # ---- Constants ----
 
-WEB_ROOT_DIR = os.path.join("..", "web")
+WEB_ROOT_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "web")
 
 MEDIA_TYPES = {
 	"html": "application/xhtml+xml",

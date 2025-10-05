@@ -1,7 +1,7 @@
 {
 	"web-server-port": 51367,
 	
-	"weather-canada-url": "http://dd.weatheroffice.ec.gc.ca/citypage_weather/xml/ON/s0000458_e.xml",
+	"weather-canada-url": "",
 	
 	"time-server": ["ntp", "ca.pool.ntp.org", "123"],
 	

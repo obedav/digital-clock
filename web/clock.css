@@ -1,0 +1,128 @@
+/* 
+ * Tablet desk clock
+ * 
+ * Copyright (c) Project Nayuki
+ * All rights reserved. Contact Nayuki for licensing.
+ * https://www.nayuki.io/page/tablet-desk-clock
+ */
+/*---- Whole page ----*/
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Swiss 721 BT", sans-serif;
+  font-size: 4vw; /* Base font size */
+  font-weight: 400;
+  line-height: 1;
+  color: #FFFFFF;
+  user-select: none; /* Accidental text selection on touchscreens is annoying */
+  -moz-user-select: none;
+}
+
+html {
+  background-color: #000000;
+  background-size: cover;
+  background-position: center;
+}
+
+body {
+  background-color: #000000;
+}
+
+html, body {
+  height: 100%;
+}
+
+/*---- Module "clock" ----*/
+#clock {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+}
+#clock #clock-datetime-box {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+#clock #clock-datetime-box #clock-time-box {
+  font-family: "Swiss 721 BT Rounded", "Swiss 721 BT", sans-serif;
+  font-weight: 900;
+  color: #FFFFFF;
+  font-size: 25vw;
+  font-kerning: none;
+  text-shadow: none;
+}
+#clock #clock-datetime-box #clock-time-box #clock-colon {
+  position: relative;
+  top: -0.07em; /* For the font Swiss 721 BT Rounded */
+}
+#clock #clock-datetime-box #clock-time-box #clock-second {
+  padding-left: 0.3em;
+  font-size: 50%;
+  opacity: 0.7;
+}
+#clock #clock-datetime-box #clock-date {
+  font-size: 5vw;
+  font-weight: 400;
+  margin-top: 1em;
+  text-shadow: none;
+  opacity: 0.8;
+}
+#clock #clock-datetime-box #clock-daylight {
+  display: none;
+}
+#clock #clock-utc {
+  display: none;
+}
+#clock #clock-weather {
+  display: none;
+}
+#clock #clock-status-box {
+  display: none;
+}
+
+/*---- Font files ----*/
+@font-face {
+  font-family: "Swiss 721 BT";
+  src: url("font/swiss-721-bt-thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Swiss 721 BT";
+  src: url("font/swiss-721-bt-light.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Swiss 721 BT";
+  src: url("font/swiss-721-bt-normal.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Swiss 721 BT";
+  src: url("font/swiss-721-bt-medium.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Swiss 721 BT";
+  src: url("font/swiss-721-bt-bold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Swiss 721 BT Rounded";
+  src: url("font/swiss-721-bt-bold-round.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}

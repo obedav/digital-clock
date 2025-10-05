@@ -189,6 +189,7 @@ namespace weather {
 	
 	async function main(): Promise<void> {
 		const url: string = (await util.configPromise).response["weather-canada-url"];
+		if (!url) return;  // Skip weather if URL is empty
 		while (true) {
 			updateWeather(url);  // Don't wait
 			

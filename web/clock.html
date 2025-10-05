@@ -13,9 +13,42 @@
 		<title>Desk clock</title>
 		<meta http-equiv="Content-Style-Type" content="text/css"/>
 		<meta http-equiv="Content-Script-Type" content="application/javascript"/>
-		<link rel="stylesheet" href="clock.css" type="text/css" media="screen"/>
+		<link rel="stylesheet" href="clock.css?v=3" type="text/css" media="screen"/>
+		<style>
+			#clock-datetime-box {
+				position: absolute !important;
+				top: 50% !important;
+				left: 50% !important;
+				transform: translate(-50%, -50%) !important;
+			}
+			#clock-time-box {
+				font-family: sans-serif !important;
+				font-size:30vw !important;
+				font-weight: bold !important;
+				color: #FFFFFF !important;
+			}
+			#clock-date {
+				position: fixed !important;
+				top: -10vh !important;
+				left: 50% !important;
+				transform: translateX(-50%) !important;
+				font-size: 5vw !important;
+				color: #FFFFFF !important;
+				margin-top: 0 !important;
+			}
+			#clock-second {
+				display: none !important;
+			}
+			#clock-utc, #clock-weather, #clock-status-box, #clock-daylight {
+				display: none !important;
+			}
+			html, body {
+				background-color: #000000 !important;
+				background-image: none !important;
+			}
+		</style>
 	</head>
-	
+
 	<body>
 		<article id="clock">
 			<div id="clock-datetime-box">
